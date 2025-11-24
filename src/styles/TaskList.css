@@ -1,0 +1,35 @@
+.task-list {
+  background: #e8f0fe;
+  border-radius: 15px;
+  padding: 18px 0;
+  box-shadow: 0 6px 15px #c1c8e4aa;
+  overflow-y: auto;
+  max-height: 620px;
+}
+
+.add-btn {
+  display: block;
+  margin: 0 auto 20px;
+  padding: 12px 34px;
+  background: #536dfe;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 8px 20px #3f56d1bb;
+  transition: background 0.25s ease;
+}
+
+.add-btn:hover {
+  background: #3f56d1;
+}
+
+.empty {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #7b8bbd;
+  font-size: 1.1rem;
+  font-style: italic;
+}

@@ -1,0 +1,107 @@
+.task-item {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  margin: 9px 20px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px #c5cde9cc;
+  padding: 14px 18px;
+  transition: box-shadow 0.22s ease;
+  position: relative;
+  user-select: none;
+  animation: taskFadeIn 0.3s ease forwards;
+}
+
+.task-item:hover {
+  box-shadow: 0 8px 25px #9eabd3cc;
+}
+
+@keyframes taskFadeIn {
+  from { opacity: 0; transform: translateY(8px);}
+  to { opacity: 1; transform: none;}
+}
+
+.task-item.completed {
+  opacity: 0.48;
+  text-decoration: line-through;
+  color: #a1a1a1;
+}
+
+.title {
+  flex: 1;
+  margin: 0 14px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #34495e;
+  cursor: default;
+}
+
+.checkbox {
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: #c9d6fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: background 0.22s ease;
+  font-size: 1.35rem;
+  color: #3949ab;
+}
+
+.checkbox:hover {
+  background: #a5b9fe;
+}
+
+.up-btn, .down-btn, .delete-btn {
+  background: none;
+  border: none;
+  margin-left: 8px;
+  color: #536dfe;
+  font-size: 1.4em;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 12px;
+  transition: background 0.18s ease;
+}
+
+.up-btn:disabled, .down-btn:disabled {
+  opacity: 0.38;
+  cursor: default;
+}
+
+.delete-btn {
+  color: #f9425f;
+}
+
+.delete-btn:hover {
+  background: #fca7b0;
+}
+
+.edit-input {
+  flex: 1;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #34495e;
+  border: 2px solid #536dfe;
+  border-radius: 8px;
+  padding: 6px 12px;
+}
+
+.edit-btn {
+  background: none;
+  border: none;
+  margin-left: 8px;
+  color: #4a90e2;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 12px;
+  transition: background 0.18s ease;
+}
+
+.edit-btn:hover {
+  background: #d5e3fb;
+}
